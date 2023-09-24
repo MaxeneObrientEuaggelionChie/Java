@@ -1,0 +1,19 @@
+
+package praktikum1;
+import java.util.Scanner;
+
+public class Lingkaran {
+    public static void main(String [] args){
+        Scanner input = new Scanner(System.in);
+        
+        final double pi = 3.141592;
+        double a, hasil;
+         System.out.print("Masukkan bilangan = ");
+        a = input.nextDouble();
+        
+        hasil = (a * a / pi);
+        System.out.println("Luas lingkaran = " +(int) hasil + "CM");
+        
+        
+    }
+}
