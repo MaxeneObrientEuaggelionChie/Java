@@ -1,0 +1,28 @@
+package Cobaan;
+import java.util.Scanner;
+public class Kembalian {
+    public static void main (String[] args){
+        Scanner input = new Scanner(System.in);
+        
+        int permen, sabun;
+        double hargaSabun, uang, bayar, kembalian; 
+        
+        System.out.print("Jumlah sabun yang dibeli = "); sabun = input.nextInt();
+        System.out.print("Harga sabun  = "); hargaSabun = input.nextDouble();
+        System.out.print("Uang Bayar  = "); bayar = input.nextDouble();
+        uang = hargaSabun * sabun;
+        kembalian = bayar - uang;
+        if(kembalian %100 >= 0 && kembalian %100 <=0){
+            kembalian = kembalian;
+            System.out.print("Jumlah kembalian anda = " + kembalian);
+            if(kembalian %500 >0){
+                double sebelumKembalian;
+                sebelumKembalian = kembalian %500;
+                permen = (int)(sebelumKembalian);    
+            }
+        }
+        kembalian = kembalian - (kembalian %500);
+        System.out.println("Kembalian anda = " + kembalian);
+        
+    }
+}
